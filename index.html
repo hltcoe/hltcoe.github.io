@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>HLTCOE</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -14,49 +16,99 @@
 <body>
 
   <div class="container">
-    <h2>
-      <a href="http://hltcoe.jhu.edu/">Human Language Technology Center of Excellence</a>
-    </h2>
+     
+      <div class="row">
+          <div class="col-md-8">
+          <h1  class="text-center">
+              <a href="http://hltcoe.jhu.edu/">Human Language Technology<br>Center of Excellence</a>
+          </h1>
+          </div>
+      </div>
+    <div class="row">
+        <div class="col-md-8">
+           
+            <p>This page provides links to a few of the projects started at
+                the HLTCOE. Additional resources can be found on
+                the <a href="https://github.com/hltcoe">HLTCOE GitHub page</a>.
+            </p>
 
-    <ul class="lead">
-      <li>
-        <a href="https://github.com/hltcoe">HLTCOE GitHub page</a>
-      </li>
-      <li>
-        <a href="http://hltcoe.github.io/concrete/audio">Concrete schema documentation</a>
-      </li>
-      <li>
-        concrete-java:
-        <a href="http://hltcoe.github.io/concrete-java/">API documentation</a>,
-        <a href="https://github.com/hltcoe/concrete-java/">GitHub repo</a>
-      </li>
-      <li>
-        concrete-python:
-        <a href="http://hltcoe.github.io/concrete-python/">API documentation</a>,
-        <a href="https://github.com/hltcoe/concrete-python/">GitHub repo</a>
-      </li>
-      <li>
-        <a href="https://groups.google.com/forum/?hl=en#!forum/hltcoe-concrete">Concrete mailing list</a>
-      </li>
-    </ul>
+            
+            <h3>Concrete</h3> 
+            
+            <p>
+                Concrete is a data serialization format for NLP. It replaces ad-hoc
+                XML, CSV, or programming language-specific serialization as a way
+                of storing document- and sentence- level annotations.
+            </p>
+            <ul>
+                <li>
+                    <a href="https://github.com/hltcoe/concrete-docs/blob/master/GETTING_STARTED.md"><span class="lead">Getting Started</span> with Concrete</a>
+                </li>
+                <li>
+                    <a href="http://hltcoe.github.io/concrete/audio">Concrete schema documentation</a>
+                </li>
+                <li>
+                    concrete-java: API documentation
+                    <a href="http://hltcoe.github.io/concrete-java/apidocs/index.html">API documentation</a>,
+                    <a href="https://github.com/hltcoe/concrete-java/">GitHub repo</a>
+                    <!-- The links below are per module. The apidocs link above is for all of these combined. -->
+                    <!--
+                    <ul>
+                        <li><a href="http://hltcoe.github.io/concrete-java/concrete-safe/apidocs/index.html">safe</a></li>
+                        <li><a href="http://hltcoe.github.io/concrete-java/concrete-util/apidocs/index.html">util</a></li>
+                        <li><a href="http://hltcoe.github.io/concrete-java/concrete-validation/apidocs/index.html">validation</a></li>
+                        <li><a href="http://hltcoe.github.io/concrete-java/ingesters/concrete-ingesters-base/apidocs/index.html">ingester base</a></li>
+                        <li><a href="http://hltcoe.github.io/concrete-java/ingesters/concrete-ingesters-simple/apidocs/index.html">simple ingester</a></li>
+                        <li><a href="http://hltcoe.github.io/concrete-java/ingesters/concrete-ingesters-gigaword/apidocs/index.html">gigaword ingester</a></li>
+                        <li><a href="http://hltcoe.github.io/concrete-java/ingesters/concrete-ingesters-alnc/apidocs/index.html">alnc ingester</a></li>
+                    </ul>
+                    -->
+                </li>
+                <li>
+                    concrete-python:
+                    <a href="http://hltcoe.github.io/concrete-python/">API documentation</a>,
+                    <a href="https://github.com/hltcoe/concrete-python/">GitHub repo</a>
+                </li>
+                <li>
+                    <a class="lead" href="https://groups.google.com/forum/?hl=en#!forum/hltcoe-concrete">Concrete mailing list</a>
+                </li>
+            </ul>
+            
+            <h3>Concretely Annotated Corpora - Coming 2015</h3>
+            
+            <p>
+                Under the heading Concretely Annotated, we are
+            processing a variety of standard corpora with multiple
+            popular NLP tool-chains, collected together under a single
+            data schema we have created that we refer to as
+            CONCRETE. We envision a multimodal workflow, where, e.g.,
+            knowledge can be extracted from both text and audio. We
+            developed CONCRETE to record and share annotations on
+            structured human language data -- both text and speech.
+            </p>
 
-    <h2>
-      Concretely Annotated Corpora - Coming 2015
-    </h2>
-    <ul class="lead">
-      <li>
-        English Gigaword
-      </li>
-      <li>
-        Annotated NYT
-      </li>
-      <li>
-        TAC Cold Start
-      </li>
-      <li>
-        Wikipedia
-      </li>
-    </ul>
-  </div>
+            <p>For the full description,
+                see <a href="http://cs.jhu.edu/~ferraro/papers/ferraro-concrete-2014.pdf">Ferraro
+                    et al. (2014)</a>. Due to the size of the
+                individual datasets, we plan to do incremental
+                releases through the LDC of:
+            </p>
+                
+            <ul>
+                <li>
+                    English Gigaword
+                </li>
+                <li>
+                    Annotated NYT
+                </li>
+                <li>
+                    TAC Cold Start
+                </li>
+                <li>
+                    Wikipedia
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
