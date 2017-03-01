@@ -1,3 +1,3 @@
-* CADET
+* CADET: Computer Assisted Discovery Extraction and Translation
 
-this is a test
+The [online demonstration|http://ec2-54-208-144-193.compute-1.amazonaws.com:8080] is hosted on AWS.
