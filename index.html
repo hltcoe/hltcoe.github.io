@@ -1,123 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>HLTCOE</title>
+<html lang="en-US">
 
+<head>
+  <title>Excellent HLT</title>
+
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
+  <div class="container-sm">
+    <header class="mb-5">
+      <h1 class="text-center display-6">
+        Excellent Human Language Technology
+      </h1>
+      <p class="lead text-muted">
+        This page links to a few of the software projects started at
+        the <a href="http://hltcoe.jhu.edu/">Human Language Technology Center of Excellence</a>. Additional resources
+        can be found on
+        our <a href="https://github.com/hltcoe">GitHub page</a>.
+      </p>
+    </header>
 
-  <div class="container">
-      <div class="row">
-          <div class="col-md-8">
-          <h1  class="text-center">
-              <a href="http://hltcoe.jhu.edu/">Human Language Technology<br>Center of Excellence</a>
-          </h1>
-          </div>
-          </div>
-          <div class="row">
-              &nbsp;
-          </div>
-    <div class="row">
-        <div class="col-md-8">
+    <main>
+      <div class="card my-3">
+        <div class="card-body">
+          <h4 class="card-title">
+            Turkle
+          </h4>
 
-            <p>This page provides links to a few of the projects started at
-                the HLTCOE. Additional resources can be found on
-                the <a href="https://github.com/hltcoe">HLTCOE GitHub page</a>.
-            </p>
+          <p class="card-text">
+            Turkle is a Django web application that provides a clone of
+            Amazon's Mechanical Turk service in your local environment,
+            allowing you to collect local expert annotations with the same
+            templates and data files you use for crowd annotation.
+            Our pip-installable ProtoTurk server can be used to
+            develop and prototype annotation templates and data files.
+          </p>
 
-
-            <h3>Concrete</h3>
-
-            <p>
-                Concrete is a data serialization format for NLP. It replaces ad-hoc
-                XML, CSV, or programming language-specific serialization as a way
-                of storing document- and sentence- level annotations.
-            </p>
-            <ul>
-                <li>
-                    <a href="http://hltcoe.github.io/concrete/"><span class="lead">Getting Started</span></a>
-                </li>
-                <li>
-                    <a href="http://hltcoe.github.io/concrete/schema/">Schema Documentation</a>
-                </li>
-                <li>
-                    concrete-java:
-                    <a href="http://www.javadoc.io/doc/edu.jhu.hlt/concrete-core/">Docs</a>,
-                    <a href="https://github.com/hltcoe/concrete-java/">Code</a>
-                </li>
-                <li>
-                    concrete-js:
-                    <a href="http://hltcoe.github.io/concrete-js/">Docs</a>,
-                    <a href="https://github.com/hltcoe/concrete-js/">Code</a>
-                </li>
-                <li>
-                    concrete-python:
-                    <a href="http://concrete-python.readthedocs.io/">Docs</a>,
-                    <a href="https://github.com/hltcoe/concrete-python/">Code</a>
-                </li>
-                <li>
-                    <a class="lead" href="https://groups.google.com/forum/?hl=en#!forum/hltcoe-concrete">Mailing List</a>
-                </li>
-            </ul>
-
-            <h3>Concretely Annotated Corpora</h3>
-
-            <p>
-                Under the heading Concretely Annotated, we
-            processed a variety of standard corpora with multiple
-            popular NLP tool-chains, collected together under a single
-            data schema we have created that we refer to as
-            Concrete. We envision a multimodal workflow, where, e.g.,
-            knowledge can be extracted from both text and audio. We
-            developed Concrete to record and share annotations on
-            structured human language data &mdash; both text and speech.
-            </p>
-
-            <p>
-              The Wikipedia portion of Concretely Annotated Corpora is
-              available from the 
-              <a href="https://archive.data.jhu.edu/dataset.xhtml?persistentId=doi:10.7281/T1/D06YVM">
-                JHU data archive
-              </a>.
-              The Gigaword and Annotated NYT portions will be available
-              through the <a href="https://www.ldc.upenn.edu/">LDC</a>.
-            </p>
-            <p>For the full description,
-                see <a href="http://cs.jhu.edu/~ferraro/papers/ferraro-concrete-2014.pdf">Ferraro
-                    et al. (2014)</a>.
-              <!--
-                Due to the size of the
-                individual datasets, we plan to do incremental
-                releases through the LDC of:
-              -->
-            </p>
-
-            <!--
-            <ul>
-                <li>
-                    English Gigaword
-                </li>
-                <li>
-                    Annotated NYT
-                </li>
-                <li>
-                    TAC Cold Start
-                </li>
-                <li>
-                    Wikipedia
-                </li>
-            </ul>
-            -->
+          <a class="card-link" href="https://turkle.readthedocs.io/en/latest/">
+            Turkle Documentation
+          </a>
+          <a class="card-link" href="https://pypi.org/project/prototurk/">
+            ProtoTurk
+          </a>
         </div>
-    </div>
+      </div>
+
+      <div class="card my-3">
+        <div class="card-body">
+          <h4 class="card-title">
+            Concrete
+          </h4>
+
+          <p class="card-text">
+            Concrete is a cross-platform data serialization format and
+            communication protocol for language annotations. It replaces ad-hoc
+            TSV, XML, JSON, and other formats for storing document- and
+            sentence-level language annotations. We developed Concrete to record
+            and share annotations on structured human language data, including
+            both text and speech.
+          </p>
+
+          <a class="card-link" href="http://hltcoe.github.io/concrete/">
+            Getting Started
+          </a>
+          <a class="card-link" href="http://hltcoe.github.io/concrete/schema/">
+            Thrift Schema
+          </a>
+          <a class="card-link" href="https://github.com/hltcoe/concrete-java/">
+            Java
+          </a>
+          <a class="card-link" href="http://hltcoe.github.io/concrete-js/">
+            JavaScript
+          </a>
+          <a class="card-link" href="http://concrete-python.readthedocs.io/">
+            Python
+          </a>
+        </div>
+      </div>
+
+      <div class="card my-3">
+        <div class="card-body">
+          <h4 class="card-title">
+            Concretely Annotated Corpora
+          </h4>
+
+          <p class="card-text">
+            Under the heading <em>Concretely Annotated</em>, we
+            processed a variety of standard corpora with multiple
+            popular NLP tool-chains using the Concrete data schema.
+          </p>
+
+          <a class="card-link" href="https://archive.data.jhu.edu/dataset.xhtml?persistentId=doi:10.7281/T1/D06YVM">
+            Wikipedia
+          </a>
+          <a class="card-link" href="https://catalog.ldc.upenn.edu/LDC2018T20">
+            English Gigaword
+          </a>
+          <a class="card-link" href="https://catalog.ldc.upenn.edu/LDC2018T12">
+            The New York Times
+          </a>
+        </div>
+
+        <div class="card-footer text-muted">
+          Ferraro et al. <a href="http://www.akbc.ws/2014/submissions/akbc2014_submission_18.pdf">Concretely Annotated
+            Corpora</a>. In <i>The Proceedings of the NeurIPS Workshop on Automated Knowledge Base Construction
+            (AKBC)</i>, 2014.
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    </main>
+
+    <footer class="mt-5">
+      <div class="text-center text-muted">
+        © 2022 Human Language Technology Center of Excellence
+      </div>
+    </footer>
+
+  </div>
 </body>
+
 </html>
